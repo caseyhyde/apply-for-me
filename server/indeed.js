@@ -46,7 +46,7 @@ router.get('/', function(req, res) {
         });
     }
   }
-runSearch = setInterval(function() {search(currentIndex)}, 2000);
+runSearch = setInterval(function() {search(currentIndex)}, 4000);
 
 })
 module.exports = router;
