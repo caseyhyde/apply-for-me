@@ -30,6 +30,7 @@ router.get('/', function(req, res) {
           function (results) {
             resultsObj = JSON.parse(results);
             console.log(resultsObj.totalResults);
+            console.log(resultsObj);
             totalResults = resultsObj.totalResults;
             for(var i = 0; i < ((resultsObj.end - resultsObj.start) + 1); i ++) {
               resultsArr.push(resultsObj.results[i]);
@@ -46,7 +47,7 @@ router.get('/', function(req, res) {
         });
     }
   }
-runSearch = setInterval(function() {search(currentIndex)}, 4000);
+runSearch = setInterval(function() {search(currentIndex)}, 2000);
 
 })
 module.exports = router;
