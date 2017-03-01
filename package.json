@@ -1,0 +1,24 @@
+{
+  "name": "indeed",
+  "version": "1.0.0",
+  "description": "App for interacting indeed API",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon server/app.js",
+    "start": "node server/app.js"
+  },
+  "keywords": [
+    "indeed",
+    "auto",
+    "apply"
+  ],
+  "author": "Casey hyde",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "indeed-api": "^1.0.0",
+    "indeed-jobs-api": "^0.1.1"
+  }
+}
