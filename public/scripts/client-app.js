@@ -4,6 +4,7 @@ $(document).ready(function() {
   $("#search").on('click', getResults);
 
   function getResults() {
+    $("#resultsList").empty();
     var keywords = $("#keywords").val();
     console.log(keywords);
     $.ajax({
@@ -13,8 +14,7 @@ $(document).ready(function() {
         keywords: keywords
       },
       success: function() {
-        console.log("what happens first?");
-        console.log("this is second?");
+        console.log("success runs first");
       }
     }).then(function(response) {
       console.log(response);
